@@ -1,0 +1,8 @@
+{
+  "name": "boilerplate-2020",
+  "version": "1.0.0",
+  "description": "Yet another boilerplate for TypeScript and React developers.",
+  "main": "index.js",
+  "author": "Henry Li <henry1943@163.com>",
+  "license": "MIT"
+}

@@ -41,4 +41,7 @@ module.exports = {
     }),
     new WebpackBar(),
   ],
+  optimization: {
+    usedExports: false,
+  },
 };

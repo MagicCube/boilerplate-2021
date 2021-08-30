@@ -63,15 +63,7 @@ export function Example({ className, title = 'Example' }: ExampleProps) {
       <main className={styles.main} />
       <footer className={styles.footer}>
         <a href="https://github.com/MagicCube" target="_blank" rel="noreferrer">
-          Henry Li
-        </a>
-        &nbsp; | &nbsp;
-        <a
-          href="https://github.com/MagicCube/boilerplate-2021"
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
+          Created by Henry Li.
         </a>
       </footer>
     </div>

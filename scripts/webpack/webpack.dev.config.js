@@ -9,7 +9,7 @@ const common = require('./webpack.common.config');
 const tsLoader = common.module.rules.find((r) => r.loader === 'ts-loader');
 if (tsLoader) {
   tsLoader.options = {
-    ...tsLoader.options, // 可能为 undefined
+    ...tsLoader.options,
     getCustomTransformers: () => ({
       before: [ReactRefreshTypeScript()],
     }),

@@ -1,5 +1,5 @@
 import { Example } from '../Example';
 
 export function Root() {
-  return <Example title="Hello world" />;
+  return <Example title="Hello world!" />;
 }

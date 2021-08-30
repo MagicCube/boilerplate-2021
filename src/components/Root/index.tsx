@@ -1,7 +1,5 @@
-import React from 'react';
-
-import { Hello } from '../Hello';
+import { Example } from '../Example';
 
 export function Root() {
-  return <Hello name="world" />;
+  return <Example title="Hello world" />;
 }

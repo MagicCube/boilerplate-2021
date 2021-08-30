@@ -8,11 +8,11 @@ const common = require('./webpack.common.config');
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    path: path.resolve(__dirname, '../../pages'),
+    path: path.resolve(__dirname, '../../'),
   },
   plugins: [
     new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, '../../pages/index.html'),
+      filename: path.resolve(__dirname, '../../index.html'),
       template: path.resolve(__dirname, '../../src/index.html'),
       inject: 'body',
       minify: {

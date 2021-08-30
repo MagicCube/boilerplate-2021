@@ -10,7 +10,7 @@
   "scripts": {
     "build:webpack": "webpack --config scripts/webpack/webpack.prod.config.js",
     "build:es": "tsc",
-    "build:pages": "webpack --config scripts/webpack/webpack.pages.config.js",
+    "build:github-pages": "npm run build:webpack",
     "build": "npm run build:webpack && npm run build:es",
     "dev": "webpack serve --config scripts/webpack/webpack.dev.config.js",
     "start": "npm run dev",

@@ -21,7 +21,11 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-module-source-map',
   devServer: {
-    // 在这里添加需要覆盖的规则
+    client: {
+      overlay: {
+        warnings: false,
+      },
+    },
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),

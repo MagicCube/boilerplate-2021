@@ -16,7 +16,7 @@ git clone https://github.com/MagicCube/boilerplate-2021.git
 
 Replace all `boilerplate-2021` with your own project name after cloning.
 
-## Installation
+## Install
 
 Install via [Yarn](https://yarnpkg.com/).
 

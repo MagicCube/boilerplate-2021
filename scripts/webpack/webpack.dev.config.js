@@ -1,9 +1,6 @@
-const path = require('path');
-
-const webpack = require('webpack');
+const { HotModuleReplacementPlugin } = require('webpack');
 const { merge } = require('webpack-merge');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ReactRefreshTypeScript = require('react-refresh-typescript');
 
@@ -31,12 +28,7 @@ module.exports = merge(common, {
     },
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new ReactRefreshWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, '../../dist/index.html'),
-      template: path.resolve(__dirname, '../../src/index.html'),
-      inject: 'body',
-    }),
+    new HotModuleReplacementPlugin(),
+    new ReactRefreshWebpackPlugin()
   ],
 });

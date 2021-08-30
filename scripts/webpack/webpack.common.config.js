@@ -2,6 +2,7 @@ const path = require('path');
 
 const CleanTerminalPlugin = require('clean-terminal-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackBar = require('webpackbar');
 
 module.exports = {
@@ -41,6 +42,11 @@ module.exports = {
       eslint: {
         files: './src/**/*.{ts,tsx,js,jsx}',
       },
+    }),
+    new HtmlWebpackPlugin({
+      filename: path.resolve(__dirname, '../../dist/index.html'),
+      template: path.resolve(__dirname, '../../src/index.html'),
+      inject: 'body',
     }),
     new WebpackBar(),
   ],

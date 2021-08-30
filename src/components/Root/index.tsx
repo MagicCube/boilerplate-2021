@@ -1,5 +1,5 @@
 import { Example } from '../Example';
 
 export function Root() {
-  return <Example title="boilerplate-2021" />;
+  return <Example title="Hello, World!" />;
 }

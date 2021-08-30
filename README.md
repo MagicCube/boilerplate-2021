@@ -4,11 +4,19 @@ Add your project descriptions here.
 
 ---
 
-## After git clone
+## Demo
 
-Replace all `boilerplate-2021` with your own project name.
+https://magiccube.github.io/boilerplate-2021/
 
-## How to install
+## Usage
+
+```sh
+git clone https://github.com/MagicCube/boilerplate-2021.git
+```
+
+Replace all `boilerplate-2021` with your own project name after cloning.
+
+## Installation
 
 Install via [Yarn](https://yarnpkg.com/).
 
@@ -16,14 +24,22 @@ Install via [Yarn](https://yarnpkg.com/).
 yarn
 ```
 
-## How to develop locally
+## Develop
 
 ```sh
 yarn dev
 ```
 
-## How to build
+## Build
 
 ```sh
 yarn build
 ```
+
+## Deploy to GitHub Pages
+
+```sh
+yarn deploy
+```
+
+Visit [GitHub Pages settings page](https://github.com/MagicCube/boilerplate-2021/settings/pages) to config your own site.

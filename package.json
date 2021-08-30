@@ -2,7 +2,9 @@
   "name": "boilerplate-2021",
   "version": "1.0.0",
   "description": "Yet another boilerplate for TypeScript and React developers.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/es/index.d.js",
   "author": "Henry Li <henry1943@163.com>",
   "license": "MIT",
   "scripts": {

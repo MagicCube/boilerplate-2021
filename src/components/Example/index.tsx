@@ -39,24 +39,29 @@ export function Example({ className, title = 'Example' }: ExampleProps) {
           </defs>
           <g className={styles.parallax}>
             <use
+              className={styles.wave1}
               xlinkHref="#gentle-wave"
               x="48"
               y="0"
-              fill="rgba(255,255,255,0.7"
             />
             <use
+              className={styles.wave2}
               xlinkHref="#gentle-wave"
               x="48"
               y="3"
-              fill="rgba(255,255,255,0.5)"
             />
             <use
+              className={styles.wave3}
               xlinkHref="#gentle-wave"
               x="48"
               y="5"
-              fill="rgba(255,255,255,0.3)"
             />
-            <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" />
+            <use
+              className={styles.wave4}
+              xlinkHref="#gentle-wave"
+              x="48"
+              y="7"
+            />
           </g>
         </svg>
       </header>

@@ -10,11 +10,12 @@
   "scripts": {
     "build:webpack": "webpack --config scripts/webpack/webpack.prod.config.js",
     "build:es": "tsc",
-    "build:github-pages": "npm run build:webpack",
+    "build:gh-pages": "npm run build:webpack",
     "build": "npm run build:webpack && npm run build:es",
     "dev": "webpack serve --config scripts/webpack/webpack.dev.config.js",
     "start": "npm run dev",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "npm run build:gh-pages && gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",

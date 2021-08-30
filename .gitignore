@@ -1,0 +1,24 @@
+# MacOS / Windows 等系统文件
+.DS_Store
+Thumbs.db
+
+# Node 依赖目录
+node_modules/
+
+# 输出目录
+/dist
+*.tsbuildinfo
+
+# 日志
+*.log
+
+# 运行时数据
+pids
+*.pid
+*.pid.lock
+
+# 集成开发环境配置文件
+/.vscode
+
+# ESLint 缓存
+.eslintcache

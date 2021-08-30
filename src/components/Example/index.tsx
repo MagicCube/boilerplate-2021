@@ -10,6 +10,17 @@ export interface ExampleProps {
 export function Example({ className, title = 'Example' }: ExampleProps) {
   return (
     <div className={cn(styles.container, className)}>
+      <a
+        target="_blank"
+        href="https://github.com/MagicCube/boilerplate-2021"
+        rel="noreferrer"
+      >
+        <img
+          style={{ position: 'absolute', top: 0, right: 0, border: 0 }}
+          src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+          alt="Fork me on GitHub"
+        />
+      </a>
       <header className={styles.header}>
         <h1 className={styles.title}>{title}</h1>
         <svg

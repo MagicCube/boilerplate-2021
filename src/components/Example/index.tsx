@@ -60,7 +60,7 @@ export function Example({ className, title = 'Example' }: ExampleProps) {
           target="_blank"
           rel="noreferrer"
         >
-          boilerplate-2021
+          GitHub
         </a>
       </footer>
     </div>

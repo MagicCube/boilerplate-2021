@@ -1,23 +1,29 @@
 # boilerplate-2021
 
-在这里添加项目的概述。
+Add your project descriptions here.
 
 ---
 
-## 如何安装
+## After git clone
 
-通过 NPM 安装：
+Replace all `boilerplate-2021` with your own project name.
 
-```sh
-npm install
-```
+## How to install
 
-或通过 Yarn 安装：
+Install via [Yarn](https://yarnpkg.com/).
 
 ```sh
 yarn
 ```
 
-## 如何在本地开发
+## How to develop locally
 
-在这里告诉开发人员如何在本地安装和开发。
+```sh
+yarn dev
+```
+
+## How to build
+
+```sh
+yarn build
+```

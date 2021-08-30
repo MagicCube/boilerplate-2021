@@ -1,1 +1,17 @@
-exclude: ['package.json', 'src']
+# Configurations of Github Pages
+#
+# You can config your own Github pages from here
+# https://github.com/MagicCube/boilerplate-2021/settings/pages
+#
+# Visit the following links for more information.
+# * https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
+# * https://jekyllrb.com/docs/configuration/options/.
+
+exclude:
+  - scripts
+  - src
+  - commitlint.config.js
+  - package.json
+  - README.md
+  - tsconfig.json
+  - yarn.lock

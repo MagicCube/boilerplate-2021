@@ -11,7 +11,7 @@ export function Example({ className, title = 'Example' }: ExampleProps) {
   return (
     <div className={cn(styles.container, className)}>
       <header className={styles.header}>
-        <h1 className={styles.title}>{title}!</h1>
+        <h1 className={styles.title}>{title}</h1>
         <svg
           className={styles.waves}
           xmlns="http://www.w3.org/2000/svg"

@@ -9,6 +9,7 @@ module.exports = merge(common, {
   mode: 'production',
   output: {
     path: path.resolve(__dirname, '../../'),
+    clean: false,
   },
   plugins: [
     new HtmlWebpackPlugin({

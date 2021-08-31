@@ -1,8 +1,10 @@
 const { HotModuleReplacementPlugin } = require('webpack');
 const { merge } = require('webpack-merge');
 
+const CleanTerminalPlugin = require('clean-terminal-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ReactRefreshTypeScript = require('react-refresh-typescript');
+const WebpackBar = require('webpackbar');
 
 const common = require('./webpack.common.config');
 
@@ -29,6 +31,8 @@ module.exports = merge(common, {
   },
   plugins: [
     new HotModuleReplacementPlugin(),
-    new ReactRefreshWebpackPlugin()
+    new ReactRefreshWebpackPlugin(),
+    new CleanTerminalPlugin(),
+    new WebpackBar(),
   ],
 });

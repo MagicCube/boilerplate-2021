@@ -1,6 +1,6 @@
 @font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC,
-  Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
-  sans-serif;
+Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei,
+sans-serif;
 @font-size-base: 14px;
 @font-size: @font-size-base;
 @font-size-lg: @font-size-base + 2px;
@@ -8,17 +8,13 @@
 @line-height-base: 1.5;
 
 @primary-color: #3488ff;
-@body-background: white;
-@disabled-color: fade(black, 25%);
-@text-color: fade(black, 65%);
-@text-color-secondary: fade(black, 45%);
+@foreground: black;
+@background: white;
 
-// Dark Theme
-// @primary-color: #e12026;
-// @body-background: black;
-// @disabled-color: fade(white, 25%);
-// @text-color: fade(white, 65%);
-// @text-color-secondary: fade(white, 45%);
+@body-background: @background;
+@disabled-color: fade(@foreground, 25%);
+@text-color: fade(@foreground, 65%);
+@text-color-secondary: fade(@foreground, 45%);
 
 @heading-color: @primary-color;
 @link-color: @primary-color;

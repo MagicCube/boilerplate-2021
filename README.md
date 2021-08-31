@@ -42,8 +42,8 @@ In `.travis.yml`, we've already integrated our project with [Travis' pages deplo
 which means every `push` to `master` branch will trigger Travis to build and update GitHub pages automatically.
 
 > You’ll need to generate a [personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-with the `public_repo` or `repo` scope (`repo` is required for private repositories).
-Since the token should be private, you’ll want to pass it to Travis securely in your repository settings or via encrypted variables in `.travis.yml`.
+> with the `public_repo` or `repo` scope (`repo` is required for private repositories).
+> Since the token should be private, you’ll want to pass it to Travis securely in your repository settings or via encrypted variables in `.travis.yml`.
 
 Alternatively, you can also run the following command from local to manually deploy GitHub pages.
 
@@ -52,3 +52,10 @@ yarn deploy
 ```
 
 Visit [GitHub Pages settings page](https://github.com/MagicCube/boilerplate-2021/settings/pages) to config your own site.
+
+## Theme
+
+Two built-in themes are introduced in this boilerplate.
+
+We use `Light Theme` by default.
+Change the `@theme` variable to `dark` in `src/styles/theme.less` if you prefer dark mode.

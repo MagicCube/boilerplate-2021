@@ -11,15 +11,15 @@
   },
   "license": "MIT",
   "scripts": {
+    "build": "npm run build:vite",
     "build:es": "tsc",
-    "build:vite": "vite build",
     "build:gh-pages": "npm run build:vite",
-    "build": "npm run build:es && npm run build:vite",
-    "preview": "vite preview",
+    "build:vite": "vite build",
+    "deploy": "npm run build:gh-pages && echo && echo 'Publishing GitHub pages...' && gh-pages -d dist",
     "dev": "vite",
     "start": "npm run dev",
     "prepare": "husky install",
-    "deploy": "npm run build:gh-pages && echo && echo 'Publishing GitHub pages...' && gh-pages -d dist"
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",

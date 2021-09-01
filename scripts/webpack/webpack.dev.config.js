@@ -7,18 +7,14 @@ const ReactRefreshTypeScript = require('react-refresh-typescript');
 const WebpackBar = require('webpackbar');
 
 const common = require('./webpack.common.config');
-const { findLoader } = require('./webpack.util');
+const { mergeLoaderOptions } = require('./webpack.util');
 
-const tsLoader = findLoader('ts-loader');
-if (tsLoader) {
-  tsLoader.options = {
-    ...tsLoader.options,
-    getCustomTransformers: () => ({
-      before: [ReactRefreshTypeScript()],
-    }),
-    transpileOnly: true,
-  };
-}
+mergeLoaderOptions('ts-loader', {
+  getCustomTransformers: () => ({
+    before: [ReactRefreshTypeScript()],
+  }),
+  transpileOnly: true,
+});
 
 module.exports = merge(common, {
   mode: 'development',

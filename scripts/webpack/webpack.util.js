@@ -10,7 +10,26 @@ function findPlugin(className, config = common) {
   return plugin;
 }
 
+function mergeLoaderOptions(name, options, config = common) {
+  const loader = findLoader(name, config);
+  if (loader) {
+    loader.options = { ...loader.options, ...options };
+  }
+}
+
+function mergePluginOptions(className, options, config = common) {
+  const plugin = findPlugin(className, config);
+  if (plugin) {
+    plugin.userOptions = {
+      ...plugin.userOptions,
+      ...options,
+    };
+  }
+}
+
 module.exports = {
   findLoader,
   findPlugin,
+  mergeLoaderOptions,
+  mergePluginOptions,
 };

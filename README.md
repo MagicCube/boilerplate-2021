@@ -1,5 +1,7 @@
 # boilerplate-2021
 
+![](https://api.travis-ci.com/MagicCube/boilerplate-2021.svg?branch=master)
+
 Add your project descriptions here.
 
 ---

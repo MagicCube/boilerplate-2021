@@ -1,7 +1,16 @@
 const common = require('./webpack.common.config');
 
 function findLoader(name, config = common) {
-  const loader = config.module.rules.find((r) => r.loader === name);
+  let loader = config.module.rules.find((r) => {
+    r.loader === name;
+  });
+  if (!loader) {
+    config.module.rules.forEach((r) => {
+      if (Array.isArray(r.use)) {
+        loader = r.use.find((u) => typeof u === 'object' && u.loader === name);
+      }
+    });
+  }
   return loader;
 }
 
@@ -27,9 +36,17 @@ function mergePluginOptions(className, options, config = common) {
   }
 }
 
+function snakeCase(s) {
+  const result = s
+    .replace(/(?:^|\.?)([A-Z])/g, (x, y) => '-' + y.toLowerCase())
+    .replace(/^-/, '');
+  return result;
+}
+
 module.exports = {
   findLoader,
   findPlugin,
   mergeLoaderOptions,
   mergePluginOptions,
+  snakeCase,
 };

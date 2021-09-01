@@ -54,13 +54,13 @@ yarn dev
 Build for production.
 
 ```sh
-yarn build:webpack
+yarn build
 ```
 
-Build for production with ES modules and TypeScript declarations.
+Generate ES modules and TypeScript declarations.
 
 ```sh
-yarn build
+yarn build:es
 ```
 
 Build for GitHub pages.

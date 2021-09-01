@@ -32,8 +32,13 @@ if (styleRule) {
 
 module.exports = merge(common, {
   mode: 'production',
+  output: {
+    filename: '[name].[fullhash].js'
+  },
   plugins: [
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css'
+    }),
     new CopyWebpackPlugin({
       patterns: [
         {

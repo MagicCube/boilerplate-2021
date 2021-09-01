@@ -3,6 +3,8 @@ const path = require('path');
 const { merge } = require('webpack-merge');
 
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 const common = require('./webpack.common.config');
 const { mergePluginOptions } = require('./webpack.util');
@@ -21,9 +23,17 @@ mergePluginOptions('HtmlWebpackPlugin', {
   },
 });
 
+const styleRule = common.module.rules.find(
+  (r) => r.use?.indexOf('style-loader') === 0
+);
+if (styleRule) {
+  styleRule.use[0] = MiniCssExtractPlugin.loader;
+}
+
 module.exports = merge(common, {
   mode: 'production',
   plugins: [
+    new MiniCssExtractPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -32,4 +42,7 @@ module.exports = merge(common, {
       ],
     }),
   ],
+  optimization: {
+    minimizer: [new CssMinimizerPlugin()],
+  },
 });

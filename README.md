@@ -41,7 +41,7 @@ yarn
 
 ## Develop
 
-Start a local Webpack development server for developing, debugging and testing.
+Start a local development server for developing, debugging and testing.
 
 ```sh
 yarn dev

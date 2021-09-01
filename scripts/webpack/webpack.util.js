@@ -1,11 +1,16 @@
 const common = require('./webpack.common.config');
 
-export function findLoader(name: string, config: any = common) {
+function findLoader(name, config = common) {
   const loader = config.module.rules.find((r) => r.loader === name);
   return loader;
 }
 
-export function findPlugin(className: string, config: any = common) {
+function findPlugin(className, config = common) {
   const plugin = config.plugins.find((p) => p.constructor.name === className);
   return plugin;
 }
+
+module.exports = {
+  findLoader,
+  findPlugin,
+};

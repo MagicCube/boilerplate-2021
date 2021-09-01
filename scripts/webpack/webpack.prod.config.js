@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge');
 
 const common = require('./webpack.common.config');
-const { findPlugin } = require('./util');
+const { findPlugin } = require('./webpack.util');
 
 const htmlWebpackPlugin = findPlugin('HtmlWebpackPlugin');
 if (htmlWebpackPlugin) {

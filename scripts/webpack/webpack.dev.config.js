@@ -7,7 +7,7 @@ const ReactRefreshTypeScript = require('react-refresh-typescript');
 const WebpackBar = require('webpackbar');
 
 const common = require('./webpack.common.config');
-const { findLoader } = require('./util');
+const { findLoader } = require('./webpack.util');
 
 const tsLoader = findLoader('ts-loader');
 if (tsLoader) {

@@ -1,10 +1,9 @@
 const { merge } = require('webpack-merge');
 
 const common = require('./webpack.common.config');
+const { findPlugin } = require('./util');
 
-const htmlWebpackPlugin = common.plugins.find(
-  (p) => p.constructor.name === 'HtmlWebpackPlugin'
-);
+const htmlWebpackPlugin = findPlugin('HtmlWebpackPlugin');
 if (htmlWebpackPlugin) {
   htmlWebpackPlugin.userOptions.minify = {
     collapseWhitespace: true,

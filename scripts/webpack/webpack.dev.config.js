@@ -7,8 +7,9 @@ const ReactRefreshTypeScript = require('react-refresh-typescript');
 const WebpackBar = require('webpackbar');
 
 const common = require('./webpack.common.config');
+const { findLoader } = require('./util');
 
-const tsLoader = common.module.rules.find((r) => r.loader === 'ts-loader');
+const tsLoader = findLoader('ts-loader');
 if (tsLoader) {
   tsLoader.options = {
     ...tsLoader.options,

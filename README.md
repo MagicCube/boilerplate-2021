@@ -10,33 +10,64 @@ Add your project descriptions here.
 
 https://magiccube.github.io/boilerplate-2021/
 
+---
+
 ## Usage
+
+Since this repository is already a [GitHub Template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-template-repository),
+you can directly [create a new GitHub repository from this template](https://github.com/magiccube/boilerplate-2021/generate).
+
+Alternatively, you can clone this repository to your local workspace.
 
 ```sh
 git clone https://github.com/MagicCube/boilerplate-2021.git
 ```
 
-Replace all `boilerplate-2021` with your own project name after cloning.
+Don't forget to replace all the `boilerplate-2021` with your own repository name after cloning.
+
+---
 
 ## Install
 
-Install via [Yarn](https://yarnpkg.com/).
+It is **STRONGLY** recommended to install dependencies via [Yarn](https://yarnpkg.com/).
 
 ```sh
 yarn
 ```
 
+---
+
 ## Develop
+
+Start a local Webpack development server for developing, debugging and testing.
 
 ```sh
 yarn dev
 ```
 
+---
+
 ## Build
+
+Build for production.
+
+```sh
+yarn build:webpack
+```
+
+Build for production with ES modules and TypeScript declarations.
 
 ```sh
 yarn build
 ```
+
+Build for GitHub pages.
+
+```sh
+yarn build:gh-pages
+```
+
+---
 
 ## Deploy to GitHub Pages
 
@@ -55,7 +86,9 @@ yarn deploy
 
 Visit [GitHub Pages settings page](https://github.com/MagicCube/boilerplate-2021/settings/pages) to config your own site.
 
-## Theme
+---
+
+## Themes
 
 Two built-in themes are introduced in this boilerplate.
 

@@ -2,7 +2,9 @@
 
 [![Travic CI Build Status](https://app.travis-ci.com/MagicCube/boilerplate-2021.svg?branch=master)](https://app.travis-ci.com/MagicCube/boilerplate-2021)
 
-Add your project descriptions here.
+Yet another boilerplate for TypeScript and React developers.
+
+[中文介绍](https://zhuanlan.zhihu.com/p/403970666)
 
 ---
 

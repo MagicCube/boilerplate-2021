@@ -1,6 +1,6 @@
 # boilerplate-2021
 
-![](https://api.travis-ci.com/MagicCube/boilerplate-2021.svg?branch=master)
+[![Travic CI Build Status](https://app.travis-ci.com/MagicCube/boilerplate-2021.svg?branch=master)](https://app.travis-ci.com/MagicCube/boilerplate-2021)
 
 Add your project descriptions here.
 

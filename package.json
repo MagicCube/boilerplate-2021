@@ -6,6 +6,9 @@
   "module": "dist/es/index.js",
   "types": "dist/es/index.d.js",
   "author": "Henry Li <henry1943@163.com>",
+  "repository": {
+    "url": "https://github.com/magiccube/boilerplate-2021"
+  },
   "license": "MIT",
   "scripts": {
     "build:webpack": "webpack --config scripts/webpack/webpack.prod.config.js",

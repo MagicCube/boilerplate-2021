@@ -347,7 +347,7 @@
   resolved "https://registry.nlark.com/@types/scheduler/download/@types/scheduler-0.16.2.tgz?cache=0&sync_timestamp=1629709259268&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fscheduler%2Fdownload%2F%40types%2Fscheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha1-GmL4lSVyPd4kuhsBsJK/XfitTTk=
 
-"@typescript-eslint/eslint-plugin@^4.29.3":
+"@typescript-eslint/eslint-plugin@^4.30.0":
   version "4.30.0"
   resolved "https://registry.nlark.com/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-4.30.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-4.30.0.tgz#4a0c1ae96b953f4e67435e20248d812bfa55e4fb"
   integrity sha1-Sgwa6WuVP05nQ14gJI2BK/pV5Ps=
@@ -372,7 +372,7 @@
     eslint-scope "^5.1.1"
     eslint-utils "^3.0.0"
 
-"@typescript-eslint/parser@^4.29.3":
+"@typescript-eslint/parser@^4.30.0":
   version "4.30.0"
   resolved "https://registry.nlark.com/@typescript-eslint/parser/download/@typescript-eslint/parser-4.30.0.tgz#6abd720f66bd790f3e0e80c3be77180c8fcb192d"
   integrity sha1-ar1yD2a9eQ8+DoDDvncYDI/LGS0=
@@ -1706,12 +1706,12 @@ eslint-plugin-jsx-a11y@^6.4.1:
     jsx-ast-utils "^3.1.0"
     language-tags "^1.0.5"
 
-eslint-plugin-react-hooks@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.nlark.com/eslint-plugin-react-hooks/download/eslint-plugin-react-hooks-4.2.0.tgz#8c229c268d468956334c943bb45fc860280f5556"
-  integrity sha1-jCKcJo1GiVYzTJQ7tF/IYCgPVVY=
+eslint-plugin-react-hooks@^4.2.1-alpha-67f38366a-20210830:
+  version "4.2.1-alpha-edfe50510-20210823"
+  resolved "https://registry.nlark.com/eslint-plugin-react-hooks/download/eslint-plugin-react-hooks-4.2.1-alpha-edfe50510-20210823.tgz#50896289e95fa018d71a850805b109f225ac37c6"
+  integrity sha1-UIliielfoBjXGoUIBbEJ8iWsN8Y=
 
-eslint-plugin-react@^7.24.0:
+eslint-plugin-react@^7.25.1:
   version "7.25.1"
   resolved "https://registry.nlark.com/eslint-plugin-react/download/eslint-plugin-react-7.25.1.tgz#9286b7cd9bf917d40309760f403e53016eda8331"
   integrity sha1-koa3zZv5F9QDCXYPQD5TAW7agzE=

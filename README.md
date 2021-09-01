@@ -57,6 +57,16 @@ Build for production.
 yarn build
 ```
 
+Preview the production build.
+
+```sh
+yarn preview
+```
+
+```sh
+yarn preview
+```
+
 Generate ES modules and TypeScript declarations.
 
 ```sh
